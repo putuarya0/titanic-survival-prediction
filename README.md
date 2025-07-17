@@ -1,64 +1,64 @@
 🚢 Titanic Survival Prediction
-
-Proyek ini bertujuan untuk memprediksi kelangsungan hidup penumpang kapal Titanic menggunakan algoritma machine learning berbasis Python dan scikit-learn.
+This project aims to predict the survival of Titanic passengers using machine learning algorithms built with Python and scikit-learn.
 
 📁 Dataset
+The dataset used is Titanic-Dataset.csv, which contains passenger information such as:
 
-Dataset yang digunakan adalah Titanic-Dataset.csv, yang berisi informasi penumpang seperti:
+Name
 
-Nama
+Age
 
-Umur
+Gender
 
-Jenis Kelamin
+Ticket Class
 
-Kelas Tiket
+Number of Siblings/Spouses Aboard
 
-Jumlah Saudara/Istri
+Embarked (Port of Embarkation)
 
-Embarked (Pelabuhan Naik)
+And more.
 
-dll.
+🧪 Analysis Steps
+1. Import Libraries & Load Data
+Utilizing libraries such as pandas, numpy, matplotlib, seaborn, and sklearn.
 
-🧪 Tahapan Analisis
+2. Data Exploration and Cleaning
+Displaying initial info and statistics
 
-Import Library & Load Data
+Handling missing values
 
-Menggunakan pustaka seperti pandas, numpy, matplotlib, seaborn, dan sklearn.
+Label encoding for categorical features
 
-Eksplorasi dan Pembersihan Data
+Normalizing numerical features
 
-Menampilkan informasi dan statistik awal.
+3. Modeling
+Training classification models using Support Vector Machine (SVM) and Random Forest
 
-Menangani data hilang.
+Evaluating model performance using metrics like:
 
-Label encoding untuk fitur kategorikal.
+Accuracy
 
-Normalisasi fitur numerik.
+Precision
 
-Modeling
+Recall
 
-Menggunakan Support Vector Machine (SVM) dan Random Forest untuk klasifikasi.
+F1-Score
 
-Evaluasi model dengan metrik seperti: akurasi, precision, recall, F1-score, confusion matrix.
+Confusion Matrix
 
-Evaluasi Hasil
+4. Result Evaluation
+Comparing the performance of both models
 
-Perbandingan performa kedua model.
+Visualizing results using confusion matrices and other plots
 
-Visualisasi menggunakan confusion matrix dan grafik lainnya.
-
-💻 Cara Menjalankan
-
-Pastikan Anda memiliki Python dan dependensi berikut:
+💻 How to Run
+Make sure you have Python installed along with the required dependencies:
 
 pip install pandas numpy scikit-learn matplotlib seaborn
-Jalankan notebook Jupyter:
+Then run the Jupyter notebook:
 
 jupyter notebook titanic.ipynb
+Ensure the file Titanic-Dataset.csv is located in the same directory as the notebook.
 
-Pastikan file Titanic-Dataset.csv tersedia di direktori yang sama dengan notebook.
-
-📊 Hasil
-
-Model memberikan prediksi apakah penumpang selamat atau tidak, dengan metrik evaluasi seperti akurasi dan F1-score ditampilkan untuk masing-masing algoritma.
+📊 Results
+The models predict whether a passenger survived or not, with evaluation metrics such as accuracy and F1-score provided for each algorithm.
